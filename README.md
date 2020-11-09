@@ -55,3 +55,5 @@ app.use(someFunction)
 
 app.listen(3000)
 ```
+10. Now go into the VsCode console and run <code>node index.js</code>
+11. Open a browser on your computer go to <code>http://localhost:3000</code>
