@@ -25,3 +25,30 @@ const port = 3000
 app.listen(3000)
 ```
 
+7. create an sync function with <code>ctx</code> as its parameter.
+```js
+const someFunction = async (ctx) => {
+
+}
+```
+8. in your async function set the body of the ctx prameter to a string like shown below.
+```js
+    ctx.body = 'hello from your server'
+```
+If you follwed all the steps so far your <code>index.js</code> file should look this:
+
+```js
+const Koa = require('koa')
+const app = new Koa()
+const port = 3000
+
+const someFunction = async (ctx) => {
+    body.ctx = 'hello from your server'
+}
+
+app.listen(3000)
+```
+9. The function we just created is considered middleware in koa, lets add it to koa so we can start using our server. We add middleware to koa by calling the <code>use()</code> method on a koa instance.
+```js
+    app.use(someFunction)
+```
