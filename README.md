@@ -21,7 +21,7 @@ Link-layer protocols establish communication between devices at a hardware level
 
 Protocols are a fundamental aspect of digital communication. In most cases, protocols operate in the background, so it is not necessary for typical users to know how each protocol works. Still, it may be helpful to familiarize yourself with some common protocols so you can better understand settings in software programs, such as web browsers and email clients.
 
-Internet Port Number
+#### Internet Port Number
 All data transmitted over the internet is sent and received using a specific set of commands, also known as a protocol. Each protocol is assigned a specific port number. For example, all website data transferred over HTTP uses port 80. Data sent over HTTPS uses port 443. Other common ports include:
 
 - Port 20 - FTP (file transfer protocol)
@@ -33,7 +33,7 @@ All data transmitted over the internet is sent and received using a specific set
 
 Port numbers are similar to wireless channels in that they prevent conflicts between different protocols. They also provide a simple way to implement network security measures, since it is possible to allow or block specific protocols.
 
-HTTP
+#### HTTP
 Stands for "Hypertext Transfer Protocol." HTTP is the protocol used to transfer data over the web. It is part of the Internet protocol suite and defines commands and services used for transmitting webpage data.
 
 HTTP uses a server-client model. A client, for example, may be a home computer, laptop, or mobile device. The HTTP server is typically a web host running web server software, such as Apache or IIS. When you access a website, your browser sends a request to the corresponding web server and it responds with an HTTP status code. If the URL is valid and the connection is granted, the server will send your browser the webpage and related files.
