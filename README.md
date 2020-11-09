@@ -15,5 +15,12 @@ In this lesson, we will learn how to set up a minimalistic webserver.
 5. create a new file and name it <code>index.js</code> 
 6. create a server by writing the followign code in your <code>index.js</code> page.
 
+```js
+const Koa = require('koa')
+const app = new Koa()
+const port = 3000
+
+app.listen(3000)
+```
 
 
