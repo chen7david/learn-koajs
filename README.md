@@ -35,6 +35,11 @@ const someFunction = async (ctx) => {
 ```js
     ctx.body = 'hello from your server'
 ```
+9. The function we just created is considered middleware in koa, lets add it to koa so we can start using our server. We add middleware to koa by calling the <code>use()</code> method on a koa instance.
+```js
+    app.use(someFunction)
+```
+
 If you follwed all the steps so far your <code>index.js</code> file should look this:
 
 ```js
@@ -45,10 +50,8 @@ const port = 3000
 const someFunction = async (ctx) => {
     body.ctx = 'hello from your server'
 }
-`
+
+app.use(someFunction)
+
 app.listen(3000)
-```
-9. The function we just created is considered middleware in koa, lets add it to koa so we can start using our server. We add middleware to koa by calling the <code>use()</code> method on a koa instance.
-```js
-    app.use(someFunction)
 ```
