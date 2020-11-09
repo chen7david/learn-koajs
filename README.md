@@ -12,6 +12,8 @@ In this lesson, we will learn how to set up a minimalistic webserver.
 3. In the top menu-bar of VsCode select view->Terminal to open the conse
 4. in the console type: <code>$ npm init -y</code> to create a package.json file that will help you manage your project. 
 4. install koa by running: <code>$ npm i koa</code> 
-4. create a new file and name it <code>index.js</code> 
+5. create a new file and name it <code>index.js</code> 
+6. create a server by writing the followign code in your <code>index.js</code> page.
+
 
 
