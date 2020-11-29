@@ -1,5 +1,19 @@
 # Creating a project
 
+### Init Project 
+```cmd
+npm init -y &&
+npm i koa kao-router config js-yaml &&
+mkdir config src && cd src && mkdir router controllers models middleware utils && cd .. &&
+touch src/index.js src/router/index.js config/default.yaml &&
+echo "// const some_name = require('some_module')" >> src/index.js &&
+echo "module.exports = {\n\t// key: require('./somefile')\n}" >> src/router/index.js &&
+cp src/router/index.js src/controllers/ &&
+cp src/router/index.js src/models/ &&
+cp src/router/index.js src/middleware/ &&
+cp src/router/index.js src/utils/
+```
+
 #### PLesson Objectives
 In this lesson, we will learn how to create a project based on the MVC design pattern. 
 We will divide our configuration, navigation (routes), logic (controllers), and our data (data model) into their separate folders to make large projects more manageable.
@@ -82,18 +96,4 @@ const controller = require('./../controller').example
 router.get('/users', controller.examples)
 
 module.exports = router
-```
-
-### Create a new Project
-```cmd
-npm init -y &&
-npm i koa kao-router config js-yaml &&
-mkdir config src && cd src && mkdir router controllers models middleware utils && cd .. &&
-touch src/index.js src/router/index.js config/default.yaml &&
-echo "// const some_name = require('some_module')" >> src/index.js &&
-echo "module.exports = {\n\t// key: require('./somefile')\n}" >> src/router/index.js &&
-cp src/router/index.js src/controllers/ &&
-cp src/router/index.js src/models/ &&
-cp src/router/index.js src/middleware/ &&
-cp src/router/index.js src/utils/
 ```
