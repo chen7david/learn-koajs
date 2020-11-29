@@ -73,7 +73,18 @@ app.listen(server.port, () => {
     console.log('server running at: ' + url.format(server))
 })
 ```
+- write the following code in your <code>src/router/example.js</code>
+```js
+const router = require('koa-router')()
+const controller = require('./../controller').example
 
+/* ROUTES */
+router.get('/users', controller.examples)
+
+module.exports = router
+```
+
+### Create a new Project
 ```cmd
 npm init -y &&
 npm i koa kao-router config js-yaml &&
