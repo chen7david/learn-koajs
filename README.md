@@ -41,7 +41,7 @@ steps to follow:
 - run: <code>$ npm init -y</code>
 - run: <code>$ npm i koa kao-router config js-yaml</code>
 - run: <code>$ mkdir config src && cd src && mkdir router controllers models middleware utils && cd ..</code>
-- run the code below to create index.js files in the designated folders:
+- run the code below to create <code>index.js</code> index.js files in the designated folders:
 ```cmd
 touch src/index.js src/router/index.js config/default.yaml &&
 echo "// const some_name = require('some_module')" >> src/index.js &&
@@ -51,7 +51,28 @@ cp src/router/index.js src/models/ &&
 cp src/router/index.js src/middleware/ &&
 cp src/router/index.js src/utils/ &&
 ```
-- 
+- write the following code in your <code>config/default.yaml</code>
+```yaml
+server:
+  protocol: http
+  hostname: your-ip-address
+  port: your-port
+```
+- write the following code in your <code>src/index.js</code>
+```js
+const Koa = require('koa')
+const app = new Koa()
+const url = require('url')
+const { server } = require('config')
+const router = require('./router')
+const dd = (val) => console.log(val)
+
+app.use(router.routes())
+
+app.listen(server.port, () => {
+    console.log('server running at: ' + url.format(server))
+})
+```
 
 ```cmd
 npm init -y &&
