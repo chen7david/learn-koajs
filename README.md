@@ -14,16 +14,25 @@ Below we have illustrated a tree diagram of our project.
 
 ```cmd
 /project-folder
+├── README.md
 ├── config
 |  └── default.yaml
-├── package-lock.json
+├── node_modules
 ├── package.json
 └── src
+   ├── controllers
+   |  └── index.js
    ├── index.js
-   └── router
+   ├── middleware
+   |  └── index.js
+   ├── models
+   |  └── index.js
+   ├── router
+   |  └── index.js
+   └── utils
       └── index.js
 
-directory: 3 file: 6
+directory: 8 file: 9
 ```
 
 steps to follow:
@@ -42,10 +51,11 @@ cp src/router/index.js src/models/ &&
 cp src/router/index.js src/middleware/ &&
 cp src/router/index.js src/utils/ &&
 ```
-
+- 
 
 ```cmd
 npm init -y &&
+npm i koa kao-router config js-yaml &&
 mkdir config src && cd src && mkdir router controllers models middleware utils && cd .. &&
 touch src/index.js src/router/index.js config/default.yaml &&
 echo "// const some_name = require('some_module')" >> src/index.js &&

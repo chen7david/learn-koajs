@@ -1,0 +1,20 @@
+{
+  "name": "learn-koajs",
+  "version": "1.0.0",
+  "description": "#### PLesson Objectives In this lesson, we will learn how to create a project based on the MVC design pattern.  We will divide our configuration, navigation (routes), logic (controllers), and our data (data model) into their separate folders to make large projects more manageable.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chen7david/learn-koajs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chen7david/learn-koajs/issues"
+  },
+  "homepage": "https://github.com/chen7david/learn-koajs#readme"
+}
