@@ -14,7 +14,7 @@ cp src/router/index.js src/middleware/ &&
 cp src/router/index.js src/utils/
 ```
 
-#### PLesson Objectives
+#### Lesson Objectives
 In this lesson, we will learn how to create a project based on the MVC design pattern. 
 We will divide our configuration, navigation (routes), logic (controllers), and our data (data model) into their separate folders to make large projects more manageable.
 
