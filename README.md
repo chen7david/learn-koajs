@@ -1,4 +1,3 @@
-# Creating a project
 
 ### Init Project 
 ```cmd
